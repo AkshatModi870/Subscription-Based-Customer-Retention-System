@@ -18,7 +18,7 @@ def get_requirements(file_path:str)->list[str]:
     return requirements
 
 setup(
-    name='AI-Driven-Review-Integrity-Blockchain-Integrated-System',
+    name='Subscription-Based-Customer-Retention-System',
     version='0.0.1',
     author='AkshatModi',
     author_email='axatmodi@gmail.com',
