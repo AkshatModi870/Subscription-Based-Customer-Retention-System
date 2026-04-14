@@ -4,5 +4,8 @@ seaborn
 matplotlib
 scikit-learn
 imblearn
-
+xgboost
+lightgbm
+catboost
+shap
 #-e .
