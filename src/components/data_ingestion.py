@@ -20,7 +20,11 @@ class DataIngestion:
     def initiate_data_ingestion(self):
         logging.info("Entered the data ingestion method or component")
         try:
+<<<<<<< HEAD
             df = pd.read_csv('notebook\data\WA_Fn-UseC_-Telco-Customer-Churn.csv')
+=======
+            df = pd.read_csv('notebooks\data\dataset.csv')
+>>>>>>> b9c1850fe95d12956b12e77ea75c1acb22be87fb
             logging.info('Read the dataset as dataframe')
 
             os.makedirs(os.path.dirname(self.ingestion_config.train_data_path), exist_ok=True)
