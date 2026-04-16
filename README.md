@@ -168,3 +168,15 @@ You need Python 3.8 or higher. Then install the required packages:
 
 ```bash
 pip install numpy pandas matplotlib seaborn scikit-learn imbalanced-learn xgboost lightgbm catboost
+```
+
+### Step 2 – Download the dataset
+
+The dataset is included in the repository under
+
+```bash
+data/WA_Fn-UseC_-Telco-Customer-Churn.csv
+```
+
+If you clone the repository, it will be there.
+
