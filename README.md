@@ -242,7 +242,7 @@ This project gives you the tools to make that decision based on the company's sp
 
 ## License
 
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+This project is open source. You may use it for learning or teaching.
 
 ## Author
 
