@@ -131,8 +131,7 @@ We set `CHOSEN_THRESHOLD = 0.35` (a moderately low threshold) to catch more chur
 |-------------|-----------|--------|----------|---------|
 | No Churn    | 0.91      | 0.71   | 0.80     | 1035    |
 | Churn       | 0.50      | 0.81   | 0.62     | 374     |
-|-------------|-----------|--------|----------|---------|
-| **Accuracy** |           |        | **0.74** | **1409** |
+| **Accuracy** |           |        | **0.74 (74%)** | **1409** |
 
 - **Out of all customers who actually churned**, the model caught **81%** (recall for Churn = 0.81).
 - **Out of all customers the model flagged as “churn”**, only **50%** actually churned (precision for Churn = 0.50). The other half were false alarms (loyal customers incorrectly warned).
