@@ -239,3 +239,13 @@ These concepts are already summarised in this README. The images are kept for re
   Start with a balanced model (optimise for **F1‑score** during hyperparameter tuning). Then, as business costs change, **adjust only the threshold** – this is fast and does not require retraining.
 
 This project gives you the tools to make that decision based on the company's specific cost of a false alarm versus the cost of losing a customer.
+
+## License
+
+This project is open source. You may use it for learning or teaching.
+
+## Author
+
+AkshatModi 
+
+---
