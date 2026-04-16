@@ -160,7 +160,7 @@ To push the model higher, you would need **different data**, such as:
 
 Even then, some churn will always be unpredictable. That “unpredictable residue” is why 100% perfect prediction is impossible.
 
-## How to run this project on your own laptop (Windows)
+## How to run this project on your own laptop (Windows)?
 
 ### Step 1 – Install Python and required libraries
 
