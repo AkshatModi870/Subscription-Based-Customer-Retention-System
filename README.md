@@ -180,3 +180,62 @@ data/WA_Fn-UseC_-Telco-Customer-Churn.csv
 
 If you clone the repository, it will be there.
 
+### Step 3 – Open the project in VS Code or any editor
+
+```bash
+git clone https://github.com/AkshatModi870/Subscription-Based-Customer-Retention-System.git
+```
+```bash
+cd telco-churn-prediction
+```
+
+### Step 4 – Run the Python script
+
+The main code is in churn_model.py. Execute it:
+
+```bash
+python churn_model.py
+```
+
+You will see:
+
+ - Data exploration output (value counts, statistics)
+ - Plots (scatter plots, histograms, box plots)
+ - Hyperparameter tuning results for each model
+ - Stacking classifier results
+ - Threshold tuning output with confusion matrices
+
+All graphs will pop up in separate windows.
+
+### Step 5 – Experiment with the threshold
+
+Open the script and change the variable CHOSEN_THRESHOLD near the end. Run again and see how recall and precision change. Try values like 0.2, 0.5, 0.8.
+
+## What do the attached images explain?
+
+The images you see in this repository contains detailed explanations about the following concepts:
+
+- **Why stacking may not be necessary** – stacking makes the model more conservative; sometimes a single bold model (like Logistic Regression or AdaBoost) is better for catching churners.
+
+- **Threshold tuning vs. scoring parameter** – two ways to control the trade‑off between recall and precision. Threshold tuning is fast (you can change it in one second), while the scoring parameter changes the model internally during training (slow but deeper).
+
+- **The ceiling of current models** – the limitation is not the algorithms; it is the data. Even the best model cannot predict churn caused by events outside the data (e.g., a customer moving to another city).
+
+- **The smoke alarm analogy** – a simple way to understand recall and precision. A sensitive alarm catches all fires (high recall) but gives many false alarms (low precision). A strict alarm gives few false alarms (high precision) but may miss some fires (low recall).
+
+These concepts are already summarised in this README. The images are kept for reference.
+
+## Summary of business decisions
+
+- **If you want to catch almost every churner (high recall)**  
+  Use a low threshold (e.g., `0.2`) or train a model with `scoring='recall'`.  
+  *Result*: You will waste some discounts on loyal customers (more false alarms), but you will rarely miss a churner.
+
+- **If you want to avoid wasting discounts (high precision)**  
+  Use a high threshold (e.g., `0.7`) or train with `scoring='precision'`.  
+  *Result*: You will miss some churners (lower recall), but almost every customer you warn actually churns – so you waste very few discounts.
+
+- **The best approach for most businesses**  
+  Start with a balanced model (optimise for **F1‑score** during hyperparameter tuning). Then, as business costs change, **adjust only the threshold** – this is fast and does not require retraining.
+
+This project gives you the tools to make that decision based on the company's specific cost of a false alarm versus the cost of losing a customer.
